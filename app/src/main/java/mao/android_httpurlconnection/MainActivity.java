@@ -114,10 +114,6 @@ public class MainActivity extends AppCompatActivity
                     {
                         stringBuilder.append(str).append("\n");
                     }
-                    bufferedReader.close();
-                    inputStreamReader.close();
-                    inputStream.close();
-                    httpURLConnection.disconnect();
                     listener.OKHandler(stringBuilder.toString());
                 }
                 catch (IOException e)
